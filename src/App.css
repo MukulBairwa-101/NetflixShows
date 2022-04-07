@@ -1,38 +1,331 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600&family=Roboto&display=swap');:root{
+    --color-light:hsl(252,30%,95%);
+    --card-text-bg:rgb(39, 39, 39);
+    --watch-btn:#961818;
+    --white:#fff;
+    --tab-bg:black;
+    --light-gray-shade:#e3e1e1;
+    --nav-bg:#211d1d;
+    --logo-clr:#a3051d;
+}
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+/* font-family: 'Roboto', sans-serif; */
+}
+body{
+    background-color:var(--color-light);
+
+}
+.pointer{
+    cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+    background-color:var(--nav-bg);
+    padding:10px;
+}
+.logo{
+    color:var(--white);
+    font-family: 'Anton', sans-serif;
+
+}
+.logo span{
+    color:var(--logo-clr);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+
+.tabs_container{
+    margin: 20px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1.3px solid var(--light-gray-shade);
+}
+.tab{
+    padding:3px 20px;
+    font-size:13px;
+    background-color:var(--tab-bg);
+    color:var(--white);
+    border:none;
+    outline:none;
+    border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+.gallery_container{
+    /* background-color:var(--color-light); */
+    margin:0px auto;
+}
+.shows_container{
+    margin: 40px auto;
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    /* background-color:black; */
+    /* padding:0 50px;   */
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+.shows_wrapper{
+    position: relative;
+    margin:40px 20px;
+   
+    
+}
+.shows_wrapper:hover .show_text_wrapper{
+    display: flex;
+   
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.show_image-wrapper{
+    max-width:250px;
+   
+
+}
+.card_image{
+    width: 260px;
+    height: 360px;
+    border-radius:5px;
+    object-fit:cover;
+    object-position: center center;
+    
+}
+.show_text_wrapper{
+    position:absolute;
+    top:50px;
+    padding:10px;
+    display:none;
+    flex-direction:column;
+    background-color:var(--card-text-bg);
+    color:var(--white);
+    transition: .5s ease;
+
+    
+}
+.show_text_wrapper >*{
+    margin:10px 10px;
+}
+
+.star{
+    width:10px;
+    padding:0 10px;
+}
+
+.checked{
+    color:rgb(248, 161, 0);
+
+}
+.show_text_wrapper p{
+    padding:0 5px 0 0;
+}
+
+.btn{
+    padding:5px 10px;
+   
+    text-align:center;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+.btn-watch{
+    background-color:var(--watch-btn);
+    color:var(--white);
+}
+
+/* responsive */
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .tab{
+        padding:5px 8px;
+        font-size:9px;
+        background-color:black;
+    }
+    .shows_container{
+        margin: 40px auto;
+        display:flex;
+        flex-wrap: wrap;
+        width:90%;
+        justify-content:flex-start;
+        
+      
+    }
+    .show_image-wrapper{
+        max-width:250px;
+       
+    
+    }
+    .card_image{
+        width: 250px;
+        height: 300px;
+        border-radius:5px 5px 0px 0px;
+        object-fit:cover;
+    object-position: center center;
+        
+    }
+    .shows_wrapper{
+        display:flex;
+        flex-direction:column;
+        margin:5px auto;
+    }
+    .show_text_wrapper{
+        position:relative;
+        padding:2px;
+        display:flex;
+        font-size: 9px;
+        top:-6px;
+    }
+    .show_text_wrapper >*{
+        margin:0px;
+        padding-left:2px;
+    }
+    .star{
+        width:5px;
+        padding:0 7px;
+    }
+    .show_text_wrapper p{
+        padding:0 5px 0 3px;
+    }
+    
+    .btn{
+        padding:5px;
+        margin:5px;
+    
+    }
+}
+
+
+/* ipads and tablets */
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .tab{
+        padding:5px 20px;
+        font-size:14px;
+        background-color:black;
+    }
+    /* .shows_container{
+        margin: 40px auto ;
+      
+    } */
+    .shows_container{
+        margin: 40px auto;
+        display:flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        width:90%;
+    
+    }
+    .show_image-wrapper{
+        max-width:300px;
+       
+    
+    }
+    .card_image{
+        width: 210px;
+        height: 300px;
+        border-radius:5px 5px 0px 0px;
+        
+    }
+
+    .shows_wrapper{
+        display:flex;
+        flex-direction:column;
+        margin:40px 10px;
+        
+    }
+    .show_text_wrapper{
+        position:relative;
+        padding:2px;
+        display:flex;
+        font-size: 12px;
+        top:-6px;
+        width:210px;
+    }
+    .show_text_wrapper >*{
+        margin:0px;
+        padding-left:7px;
+    }
+    .star{
+        width:8px;
+        padding:0 10px;
+    }
+    .show_text_wrapper p{
+        padding:0 5px 0 7px;
+    }
+    
+    .btn{
+        padding:8px;
+        margin:12px;
+
+    
+    }
+}
+
+
+
+
+
+/* 769px and 980px: small, laptops screens */
+@media screen and (min-width: 769px) and (max-width: 980px){
+    .tab{
+        padding:5px 22px;
+        font-size:16px;
+        background-color:black;
+    }
+    .shows_container{
+        margin: 40px auto;
+        display:flex;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+        width:90%;
+    }
+    .show_image-wrapper{
+        max-width:300px;
+       
+    
+    }
+    .card_image{
+        width: 290px;
+        height: 370px;
+        border-radius:5px 5px 0px 0px;
+        
+    }
+ 
+    
+    .shows_wrapper{
+        display:flex;
+        flex-direction:column;
+        margin:40px auto;
+        
+    }
+    .show_text_wrapper{
+        position:relative;
+        padding:2px;
+        display:flex;
+        font-size: 15px;
+        top:-6px;
+        width:290px;
+    }
+    .show_text_wrapper >*{
+        margin:0px;
+        padding-left:10px;
+    }
+    .star{ 
+        padding:0 10px;
+    }
+    .show_text_wrapper p{
+        padding:0 5px 0 10px;
+    }
+    
+    .btn{
+        padding:5px;
+        margin:18px;
+
+    
+    }
 }
