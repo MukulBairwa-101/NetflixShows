@@ -40,7 +40,7 @@ const Gallery = () => {
                 const {id,cover,name,link,ratings,genre}= item;
 
                 return(
-                    <div className="shows_wrapper">
+                    <div className="shows_wrapper" key={id}>
                         <div className="show_image-wrapper ">
                             <img src={cover} alt={name} className="card_image pointer" />
                         </div>
