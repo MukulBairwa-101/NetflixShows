@@ -4,23 +4,23 @@ const data = [
         cover:'images/cursed.jpg',
         name:'Cursed',
         link:'https://www.netflix.com/in/title/80199393',
-        ratings:4,
+        ratings:3,
         genre:'Action'
     },
     {
         id:2,
         cover:'images/hell.jpg',
         name:'HellBound',
-        link:'',
-        ratings:4,
+        link:'https://www.netflix.com/in/title/81256675',
+        ratings:3,
         genre:'Horror'
     },
     {
         id:3,
         cover:'images/strangerthings.jpg',
         name:'Stranger Things',
-        link:'',
-        ratings:4,
+        link:'https://www.netflix.com/in/title/80057281',
+        ratings:5,
         genre:'Sci-Fi'
     },
     {
@@ -28,7 +28,7 @@ const data = [
         cover:'images/hillhouse.jpg',
         name:'The Haunting Of Hill House',
         link:'https://www.netflix.com/in/title/80189221',
-        ratings:4,
+        ratings:5,
         genre:'Horror'
     },
     {
@@ -36,7 +36,7 @@ const data = [
         cover:'images/lostinspace.jpg',
         name:'Lost In Space',
         link:'https://www.netflix.com/in/title/80104198',
-        ratings:4,
+        ratings:5,
         genre:'Sci-Fi'
     },
     {
@@ -52,7 +52,7 @@ const data = [
         cover:'images/dark.jpg',
         name:'Dark',
         link:'https://www.netflix.com/in/title/80100172',
-        ratings:4,
+        ratings:5,
         genre:'Sci-Fi'
     },
     {
@@ -60,7 +60,7 @@ const data = [
         cover:'images/shadow.jpg',
         name:'Shadow and Bone',
         link:'https://www.netflix.com/in/title/80236319',
-        ratings:4,
+        ratings:5,
         genre:'Action'
     },
     {
@@ -68,7 +68,7 @@ const data = [
         cover:'images/sweetthooth.jpg',
         name:'Sweet Tooth',
         link:'https://www.netflix.com/in/title/81221380',
-        ratings:4,
+        ratings:5,
         genre:'Action'
     },
     {
@@ -76,7 +76,7 @@ const data = [
         cover:'images/witcher.jpg',
         name:'The Witcher',
         link:'https://www.netflix.com/in/title/80189685',
-        ratings:4,
+        ratings:5,
         genre:'Action'
     },
     {
@@ -92,7 +92,7 @@ const data = [
         cover:'images/pb.jpg',
         name:'Peaky Blinders',
         link:' https://www.netflix.com/in/title/80002479',
-        ratings:4,
+        ratings:5,
         genre:'Crime'
     },
     {
@@ -100,7 +100,7 @@ const data = [
         cover:'images/Money.jpg',
         name:'Money Heist',
         link:'https://www.netflix.com/in/title/80192098',
-        ratings:4,
+        ratings:5,
         genre:'Crime'
     },
     {
@@ -124,7 +124,7 @@ const data = [
         cover:'images/arcane.jpg',
         name:'Arcane',
         link:'https://www.netflix.com/in/title/81435684',
-        ratings:4,
+        ratings:5,
         genre:'Animation'
     },
     {
@@ -132,9 +132,26 @@ const data = [
         cover:'images/jw.jpg',
         name:'Jurassic World ',
         link:'https://www.netflix.com/in/title/81009646',
-        ratings:4,
+        ratings:5,
         genre:'Animation'
     },
+    {
+        id:18,
+        cover:'images/bmt.jpg',
+        name:'Bureau of Magical Things ',
+        link:'https://www.netflix.com/in/title/81335124',
+        ratings:3,
+        genre:'Kids'
+    },
+    {
+        id:19,
+        cover:'images/wizards.jpg',
+        name:'Wizards: Tales of Arcadia',
+        link:'https://www.netflix.com/in/title/80218108',
+        ratings:4,
+        genre:'Kids'
+    },
+
 
 
    

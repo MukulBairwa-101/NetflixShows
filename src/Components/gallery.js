@@ -1,5 +1,7 @@
 import React,{useState} from 'react'
 import data from "../assets/data";
+import {Stars5 ,Stars4 ,Stars3 ,Stars2 ,Stars1} from "../assets/stars";
+
 
 const Gallery = () => {
 
@@ -21,6 +23,8 @@ const Gallery = () => {
     }
 
 
+
+
     return (
         <div className="gallery_container">
             <div className="tabs_container ">
@@ -28,6 +32,7 @@ const Gallery = () => {
                 <button onClick={()=>filterShows('Action')} className="tab pointer" >Action</button>
                 <button onClick={()=>filterShows('Animation')} className="tab pointer">Animation</button>
                 <button onClick={()=>filterShows('Crime')} className="tab pointer">Crime</button>
+                <button onClick={()=>filterShows('Kids')} className="tab pointer">Kids</button>
                 <button onClick={()=>filterShows('Horror')} className="tab pointer" >Horror</button>
                 <button onClick={()=>filterShows('Sci-Fi')} className="tab pointer">Sci-Fi</button>
                 
@@ -48,11 +53,17 @@ const Gallery = () => {
                             <h3>{name}</h3>
                             <span>{genre}</span>
                             <p>{ratings}
-                            <span className="fa fa-star checked star"></span>
-                            <span className="fa fa-star checked star"></span>
-                            <span className="fa fa-star checked star"></span>
-                            <span className="fa fa-star checked star"></span>
-                            <span className="fa fa-star star"></span>
+                            {ratings === 1 ? <Stars1 /> 
+                            :
+                            ratings === 2 ? <Stars2 />
+                            :
+                            ratings === 3 ? <Stars3 />
+                            :
+                            ratings === 4 ? <Stars4 />
+                            :
+                            ratings === 5 ? <Stars5 /> 
+                            :''
+                            }
                             </p>
                             <a href={link} className="btn btn-watch pointer">Watch Now</a>
                             
